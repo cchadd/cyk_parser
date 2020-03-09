@@ -4,7 +4,7 @@ In order to use the parser, please launch
 
 The `run` file contains the command line `python script/main.py -s test_sentence.txt -p parser/cyk_parser -f parsed_sentences` which takes the following arguments
 
-- `-s` the path to the set of sentences you want to parse (1 sentence per line with exactly 1 whitespace between each token)
+- `-s` the path to the set of sentences you want to parse (1 sentence per line with exactly 1 whitespace between each token). You can directly modify the (`test_sentence.txt file`)
 - `-p` the path to the parser you want to use 
 - `-f` the path to the file in which you want to store the parsed sentences (it will create a [`.txt`] file)
 - `-t`if you want to display the corresponding tree (optional)
@@ -27,4 +27,9 @@ for an given input sentence
 
 - The `parser` folder contains the parser I created in `.pkl` format
 - The `script` folder contains any piece of code to create, train and use the parser
-- The `data` folder contains the sequoia treebanks on which the training and testing has been performed
+- The `data` folder contains:
+  - the sequoia treebanks on which the training and testing has been performed
+  - a set of sentences to parse
+  - the output of the parser on such a set of sentences
+  - the output of the parser to validate the training `evaluation_data.parser_output.txt`
+  - a sample of the parser outcome in case you request to build the tree
