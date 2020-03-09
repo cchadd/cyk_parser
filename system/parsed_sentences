@@ -1,0 +1,2 @@
+(SENT (NP|<NPP-Srel> (DET Le) (AP|<ADJ-PP> (ADJ petit) (NP (PRO chien) (AP|<VPpart-PONCT> (NP|<VN-NP> (VN|<V-VPP> (V est) (VPP parti)) (NP|<P-DET> (P sans) (NP|<DET-NC> (DET son) (NC maitre)))) (PONCT .))))))
+(SENT (NP|<NPP-Srel> (DET Le) (AP|<ADJ-PP> (ADJ petit) (NP (PRO chien) (AP|<VPpart-PONCT> (NP|<VN-NP> (VN|<V-VPP> (V est) (VPP parti)) (NP|<P-DET> (P sans) (NP|<DET-NC> (DET son) (NC maitre)))) (PONCT .))))))
