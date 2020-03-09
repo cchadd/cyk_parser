@@ -22,3 +22,4 @@ for an given input sentence
 
 - The `parser` folder contains the parser I created in `.pkl` format
 - The `script` folder contains any piece of code to create, train and use the parser
+- The `data` folder contains the sequoia treebanks on which the training and testing has been performed
