@@ -7,6 +7,7 @@ The `run` file contains the command line `python script/main.py -s test_sentence
 - `-s` the path to the set of sentences you want to parse (1 sentence per line with exactly 1 whitespace between each token)
 - `-p` the path to the parser you want to use 
 - `-f` the path to the file in which you want to store the parsed sentences (it will create a [`.txt`] file)
+- `-t`if you want to display the corresponding tree (optional)
 
 The output of the parser will take the following form:
 
@@ -16,6 +17,10 @@ The output of the parser will take the following form:
 for an given input sentence
 
 `Le petit chien est parti sans son maitre .` 
+
+![alt text](https://github.com/cchadd/cyk_parser/blob/master/sample.png)
+
+
 
 
 ### Other folders
