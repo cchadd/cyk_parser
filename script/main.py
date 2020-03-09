@@ -6,7 +6,8 @@ import sys
 ap = argparse.ArgumentParser()
 ap.add_argument("-s", '--sentences', required=True, help="Path to sentences to parse")
 ap.add_argument("-f", '--file_to_store', required=True, help="Path to store the parsed sentences (this will create a file)")
-ap.add_argument('-p', '--path_to_parser', required=True, help='Path to parser')
+ap.add_argument("-p", '--path_to_parser', required=True, help='Path to parser')
+ap.add_argument("-t", '--view_tree', required=False, help='Want to display the resulting tree ? ;)', action="store_true")
 
 args = vars(ap.parse_args())
 
@@ -45,7 +46,15 @@ try:
         print(sentence)
         (table, dic) = cyk.parse(sentence)
         node = cyk.get_best_tree()
-        f.write(cyk.build_tree(node, is_root=True) + "\n")
+
+        p = cyk.build_tree(node, is_root=True)
+
+        f.write(p + "\n")
+
+        if args['view_tree']:
+            tree = Tree.fromstring(p)
+            tree.pretty_print()
+
     f.close()
     print("Done !")
 except (NameError, AttributeError, TypeError):
