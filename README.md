@@ -18,7 +18,7 @@ for an given input sentence
 
 `Le petit chien est parti sans son maitre .` 
 
-![alt text](https://github.com/cchadd/cyk_parser/blob/master/sample.png)
+![alt text](https://github.com/cchadd/cyk_parser/data/blob/master/sample.png)
 
 
 
