@@ -6,8 +6,4 @@
 - `preprocessing.py`:This module basically requires an embedding such as polyglot-fr.pkl to be built
 - `train.py`: This module performs the training
 - `main.py`: This script is the one that is called in the shell file. It allows the user to enter the
-following command line:
-
-`python main.py -s ’path_to_sentences’ -p ’path_to_parser’ -f ’path_to_store`
-
-where 1) -s requires the path to a .txt file containing the sentences to be parsed (in string format with exactly 1 whitespace between each token); 2) -p requires the path to the cyk parser to be used to perform the parsing; 3) -f is the path to a `.txt` file where the parsed sentences will be stored.
+following command line: `python main.py -s ’path_to_sentences’ -p ’path_to_parser’ -f ’path_to_store` where 1) -s requires the path to a .txt file containing the sentences to be parsed (in string format with exactly 1 whitespace between each token); 2) -p requires the path to the cyk parser to be used to perform the parsing; 3) -f is the path to a `.txt` file where the parsed sentences will be stored.
